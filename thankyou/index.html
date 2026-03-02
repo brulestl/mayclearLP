@@ -1,0 +1,567 @@
+<!DOCTYPE html><html lang="en" data-redirect-timezone="1" class="lenis"><head>
+	<meta charset="utf-8">
+	
+	
+	<script>try{if(localStorage.get("__framer_force_showing_editorbar_since")){const n=document.createElement("link");n.rel = "modulepreload";n.href="https://framer.com/edit/init.mjs";document.head.appendChild(n)}}catch(e){}</script>
+	<!-- Start of headStart -->
+    
+    <!-- End of headStart -->
+	<meta name="viewport" content="width=device-width">
+	<meta name="generator" content="Framer bbed9c4">
+	<title>V6 - Waitlist</title>
+    <meta name="description" content="First interactive guide for deep productivity and docus specially made for ADHD and Neurodivergent brains.">
+    <meta name="framer-search-index" content="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/searchIndex-4FMRHgicGKGS.json">
+    <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/searchIndex-yj8SWGyljkEV.json">
+    <link href="https://framerusercontent.com/images/XArw3OQw1Weizai84VkvUN82Q.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="https://framerusercontent.com/images/XArw3OQw1Weizai84VkvUN82Q.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mayclear - Your Focus Companion">
+    <meta property="og:description" content="First interactive guide for deep productivity and docus specially made for ADHD and Neurodivergent brains.">
+    <meta property="og:image" content="https://framerusercontent.com/images/KhMxsFnMWxbCU0hL8raQp30b9s.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mayclear - Your Focus Companion">
+    <meta name="twitter:description" content="First interactive guide for deep productivity and docus specially made for ADHD and Neurodivergent brains.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/KhMxsFnMWxbCU0hL8raQp30b9s.png">
+	<style data-framer-css-ssr="">
+		html, body, #main {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	:root {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	* {
+		box-sizing: border-box;
+		-webkit-font-smoothing: inherit;
+	}
+	h1, h2, h3, h4, h5, h6, p, figure {
+		margin: 0;
+	}
+		body, input, textarea, select, button { font-size: 12px; font-family: sans-serif; }
+		body { --token-6c9f0706-c7df-4374-b4b0-8bf4d4d75293: rgb(255, 255, 255);--token-42b99213-5cbb-4a9a-9d35-426d144c5406: rgb(0, 0, 0);--token-90b2aadb-7742-472b-8ea3-e5a41ff901d4: rgba(255, 255, 255, 0.7);--token-892d3b4a-6d6f-4391-98d2-7d5a5531f4ef: rgba(255, 255, 255, 0.4);--token-412cf3f5-6bcc-4fb2-92b9-1f48634eb54c: rgba(0, 0, 0, 0.05);--token-07aaf817-d347-455f-89bc-717c87911a1b: rgba(255, 255, 255, 0.1);--token-b7a51acb-1d43-4b5a-a45b-a90130684e71: rgba(0, 0, 0, 0.2); @supports (color: color(display-p3 1 1 1)) {  } }
+@media (prefers-color-scheme: dark) { body {  @supports (color: color(display-p3 1 1 1)) {  } } }
+		
+		@supports (z-index: calc(infinity)) {
+			#__framer-badge-container {
+				--infinity: infinity;
+			}
+		}
+
+		#__framer-badge-container {
+			position: fixed;
+			bottom: 0;
+			padding: 20px;
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			pointer-events: none;
+			z-index: calc(var(--infinity, 2147483647));
+		}
+		
+	</style>
+	<style data-framer-font-css="">/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Petrona';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGW4_NXL7bZo9XXgXdCu2vkCLkNEVtF8uwDd4F2xz_wgm0ErDzaIiE1pRdjhw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Petrona';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGW4_NXL7bZo9XXgXdCu2vkCLkNEVtF8uwDd4F2xz_wgm0ErDzaIiE0pRdjhw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Petrona';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGW4_NXL7bZo9XXgXdCu2vkCLkNEVtF8uwDd4F2xz_wgm0ErDzaIiE6pRc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Petrona';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGW4_NXL7bZo9XXgXdCu2vkCLkNEVtF8uwDd4F2xz_wgm0ErDzaIiE1pRdjhw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Petrona';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGW4_NXL7bZo9XXgXdCu2vkCLkNEVtF8uwDd4F2xz_wgm0ErDzaIiE0pRdjhw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Petrona';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGW4_NXL7bZo9XXgXdCu2vkCLkNEVtF8uwDd4F2xz_wgm0ErDzaIiE6pRc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGQ4_NXL7bZo9XXq35wRLONYyOjFk6NsGZKPX6urlRqLGoRZH8CaRE4vRM.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGQ4_NXL7bZo9XXq35wRLONYyOjFk6NsGZKPX6urlRqLGoRZH8CaBE4vRM.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGQ4_NXL7bZo9XXq35wRLONYyOjFk6NsGZKPX6urlRqLGoRZH8CZhE4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGQ4_NXL7bZo9XXq35wRLONYyOjFk6NsGZKPX6urlRqLGoRZH8CaRE4vRM.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGQ4_NXL7bZo9XXq35wRLONYyOjFk6NsGZKPX6urlRqLGoRZH8CaBE4vRM.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/petrona/v36/mtGQ4_NXL7bZo9XXq35wRLONYyOjFk6NsGZKPX6urlRqLGoRZH8CZhE4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2"); font-style: normal; font-weight: 900; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/X5hj6qzcHUYv7h1390c8Rhm6550.woff2"); font-style: normal; font-weight: 900; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2"); font-style: normal; font-weight: 900; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/cugnVhSraaRyANCaUtI5FV17wk.woff2"); font-style: normal; font-weight: 900; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/5HcVoGak8k5agFJSaKa4floXVu0.woff2"); font-style: normal; font-weight: 900; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/rZ5DdENNqIdFTIyQQiP5isO7M.woff2"); font-style: normal; font-weight: 900; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/P2Bw01CtL0b9wqygO0sSVogWbo.woff2"); font-style: normal; font-weight: 900; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2"); font-style: italic; font-weight: 900; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2"); font-style: italic; font-weight: 900; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2"); font-style: italic; font-weight: 900; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/3ZmXbBKToJifDV9gwcifVd1tEY.woff2"); font-style: italic; font-weight: 900; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2"); font-style: italic; font-weight: 900; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/gcnfba68tfm7qAyrWRCf9r34jg.woff2"); font-style: italic; font-weight: 900; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2"); font-style: italic; font-weight: 900; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2"); font-display: swap; font-style: italic; font-weight: 700; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2"); font-display: swap; font-style: italic; font-weight: 700; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2"); font-display: swap; font-style: italic; font-weight: 700; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2"); font-display: swap; font-style: italic; font-weight: 700; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2"); font-display: swap; font-style: italic; font-weight: 700; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2"); font-display: swap; font-style: italic; font-weight: 700; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2"); font-display: swap; font-style: italic; font-weight: 700; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/mYcqTSergLb16PdbJJQMl9ebYm4.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/ZRl8AlxwsX1m7xS1eJCiSPbztg.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/nhSQpBRqFmXNUBY2p5SENQ8NplQ.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/DYHjxG0qXjopUuruoacfl5SA.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/s7NH6sl7w4NU984r5hcmo1tPSYo.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/7lw0VWkeXrGYJT05oB3DsFy8BaY.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/wx5nfqEgOXnxuFaxB0Mn9OhmcZA.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2070, U+2074-207E, U+2080-208E, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2"); font-display: swap; font-style: normal; font-weight: 500; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter Variable"; src: url("https://framerusercontent.com/assets/7lw0VWkeXrGYJT05oB3DsFy8BaY.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Geist Placeholder"; src: local("Arial"); ascent-override: 94.47%; descent-override: 27.73%; line-gap-override: 0.00%; size-adjust: 106.39% }
+@font-face { font-family: "Petrona Placeholder"; src: local("Times New Roman"); ascent-override: 80.52%; descent-override: 25.34%; line-gap-override: 0.00%; size-adjust: 106.56% }
+@font-face { font-family: "Inter Placeholder"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0.00%; size-adjust: 107.89% }
+@font-face { font-family: "Inter Variable Placeholder"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0.00%; size-adjust: 107.89% }</style>
+	<link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+	<!-- Start of headEnd -->
+    
+    <!-- End of headEnd -->
+<style type="text/css" data-framer-css="true"></style><meta name="robots" content="max-image-preview:large"><style>
+#__framer-editorbar-container {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    z-index: calc(2147483647);
+    width: max-content;
+    cursor: pointer;
+}
+
+#__framer-editorbar-label {
+    background-color: #111;
+    border-radius: 8px;
+    font-family: "Inter", "Inter-Regular", system-ui, Arial, sans-serif;
+    font-size: 12px;
+    height: fit-content;
+    opacity: 0;
+    padding: 4px 8px;
+    transition: opacity 0.4s ease-out;
+    font-weight: 500;
+    flex-shrink: 0;
+    position: fixed;
+    width: max-content;
+    pointer-events: none;
+    user-select: none;
+}
+
+#__framer-editorbar-button {
+    all: unset;
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+    flex-shrink: 0;
+}
+
+#__framer-editorbar-label.__framer-editorbar-button-tooltip-visible {
+    opacity: 1;
+}
+
+#__framer-editorbar-label, #__framer-editorbar-button {
+    backdrop-filter: blur(10px);
+    background-color: rgba(34, 34, 34, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px;
+    color: #fff;
+}
+
+#__framer-editorbar-loading-spinner {
+    width: 12px;
+    height: 12px;
+    -webkit-mask: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApNJREFUSA2tlUtLlFEYgEe7mtFFQ8NLFBG1SJAwahtiLVy5ceVSEPQH1LZf0Lp9FO1bdYNyI7gyBFcS2kAzilYq3sfxeYZ55Zv6FGfohWfOd97vnPd23u9MXeZoaeb1Q7gPHXAFzsAS5GACxiEPqVKXqs1kmtAPQi+cAtedToz1PJ8ExxPwDl7CAlRImoN7rBiF86ABHTiGAzMIh8n3O+ifwWc4EL0n5TGTYQijvjNSxbUadozInUeGZ3nuh1WYgpIkM+hGMwYajAgdrfUn+AaLoLTCAxiAOxCZxL4RdB+gZMjxEjwHo4hS8Jh5DR9hz0mKaNizegoNEI7Wee6FXJTISG6AUgDr+QImoAiHie+mwZJow/PRps4uwnsnRj8Epqc4voVJJ8eULOtW4BFYYjPpgjc+3IWI2sh/wFeoVl6xYQ48dDGLfjOwc/ygQqz595hUMVouS9QHBm4l6k3HWpnBLqicgVrlCxujSbR1Swd+UDpQYRS/oVaZZ2MWwlZBB9Zdxf+QTYw8SRgq6sAvz7vH6JULEB9USVHFjzZskgPRQR4ayxoXXIdaHdg9HrB2rErByWxZERnYtrWUzD0esDbtTmXPhzXwHrKLxEUbYGbVyDkWWwkdadfqbPmwDXZSCyh2VAf8BM/nOOJH5Y0QopMt2I5U/KO4DZZJB47XwEX+ex0mGroMV8sLwp56gyuGwiyW4SZ4c8bt2cZzO7jBNeqtsRHbeZ1g9krsMbhfYPv/c5gecA+4yAVuitFszE5Hjva872OMdXagF19JIoOYWyozMTI3J0tmA6gLvXPfO1cc/XOqOLe/HbjwD8yCXRD3VNJROEgatiRZMJsKsbZHia3nAdphtq8fkiWyXJbBe8uM1aXKPouNnz2Bm1kwAAAAAElFTkSuQmCC);
+    mask: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApNJREFUSA2tlUtLlFEYgEe7mtFFQ8NLFBG1SJAwahtiLVy5ceVSEPQH1LZf0Lp9FO1bdYNyI7gyBFcS2kAzilYq3sfxeYZ55Zv6FGfohWfOd97vnPd23u9MXeZoaeb1Q7gPHXAFzsAS5GACxiEPqVKXqs1kmtAPQi+cAtedToz1PJ8ExxPwDl7CAlRImoN7rBiF86ABHTiGAzMIh8n3O+ifwWc4EL0n5TGTYQijvjNSxbUadozInUeGZ3nuh1WYgpIkM+hGMwYajAgdrfUn+AaLoLTCAxiAOxCZxL4RdB+gZMjxEjwHo4hS8Jh5DR9hz0mKaNizegoNEI7Wee6FXJTISG6AUgDr+QImoAiHie+mwZJow/PRps4uwnsnRj8Epqc4voVJJ8eULOtW4BFYYjPpgjc+3IWI2sh/wFeoVl6xYQ48dDGLfjOwc/ygQqz595hUMVouS9QHBm4l6k3HWpnBLqicgVrlCxujSbR1Swd+UDpQYRS/oVaZZ2MWwlZBB9Zdxf+QTYw8SRgq6sAvz7vH6JULEB9USVHFjzZskgPRQR4ayxoXXIdaHdg9HrB2rErByWxZERnYtrWUzD0esDbtTmXPhzXwHrKLxEUbYGbVyDkWWwkdadfqbPmwDXZSCyh2VAf8BM/nOOJH5Y0QopMt2I5U/KO4DZZJB47XwEX+ex0mGroMV8sLwp56gyuGwiyW4SZ4c8bt2cZzO7jBNeqtsRHbeZ1g9krsMbhfYPv/c5gecA+4yAVuitFszE5Hjva872OMdXagF19JIoOYWyozMTI3J0tmA6gLvXPfO1cc/XOqOLe/HbjwD8yCXRD3VNJROEgatiRZMJsKsbZHia3nAdphtq8fkiWyXJbBe8uM1aXKPouNnz2Bm1kwAAAAAElFTkSuQmCC);
+    -webkit-mask-size: 12px;
+    mask-size: 12px;
+    background-color: #fff;
+
+
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-name: __framer-loading-spin;
+    animation-timing-function: linear;
+}
+
+@keyframes __framer-loading-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+</style><style>
+#__framer-editorbar {
+    /* https://sergeyski.com/css-color-scheme-and-iframes-lessons-learned-from-disqus-background-bug */
+    color-scheme: light dark;
+    overflow: hidden;
+    position: fixed;
+    border: none;
+    z-index: calc(2147483647);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    touch-action: manipulation;
+}
+
+@supports (height: 100dvh) {
+    #__framer-editorbar {
+        height: 100dvh;
+    }
+}
+
+#__framer-editorbar.status_hidden {
+    display: none;
+}
+
+#__framer-editorbar.status_visually_hidden {
+    clip-path: circle(1px at calc(100% - 1px) calc(100% - 1px));
+    z-index: calc(2147483647 - 1);
+}
+
+#__framer-editorbar.status_measuring {
+    clip-path: unset;
+}
+</style></head>
+<body>
+	
+	<!-- Start of bodyStart -->
+    
+    <!-- End of bodyStart -->
+	<script data-relative-date-script="global">!function(){var c=new Map;function p(e,t,n){let r=[n,{numeric:t,style:e}],o=JSON.stringify(r),s=c.get(o);if(s)return s;let i=new Intl.RelativeTimeFormat(...r);return c.set(o,i),i}function D(e,t,n,a,r,o,s){let i=U(e,t,n),d=F(e,t,i),u=p(a,r,s).format(d,i);return o?R(u):u}function R(e){return e.charAt(0).toUpperCase()+e.slice(1)}function U(e,t,n){if(n!=="auto")return n;let a=T(e,t);if(Math.abs(a)<=7)return"day";let r=g(e,t);if(Math.abs(r)<=4)return"week";let o=v(e,t);return Math.abs(o)<=12?"month":"year"}var h=1e3,y=6e4,C=36e5,M=864e5,w=6048e5;function F(e,t,n){let a=e.getTime()-t.getTime();switch(n){case"second":return Math.trunc(a/h);case"minute":return Math.trunc(a/y);case"hour":return Math.trunc(a/C);case"day":return T(e,t);case"week":return g(e,t);case"month":return v(e,t);case"quarter":return _(e,t);case"year":return x(e,t)}let r=n}function l(e){let t=new Date(e);return t.setUTCHours(0,0,0,0),t}function T(e,t){let n=l(e).getTime(),a=l(t).getTime();return Math.round((n-a)/M)}function f(e){let t=new Date(e),n=t.getUTCDay(),a=(n<1?7:0)+n-1;return t.setUTCDate(t.getUTCDate()-a),t.setUTCHours(0,0,0,0),t}function g(e,t){let n=f(e).getTime(),a=f(t).getTime();return Math.round((n-a)/w)}function v(e,t){let n=e.getUTCFullYear()-t.getUTCFullYear(),a=e.getUTCMonth()-t.getUTCMonth();return n*12+a}function m(e){let t=e.getUTCMonth();return Math.trunc(t/3)}function _(e,t){let n=e.getUTCFullYear()-t.getUTCFullYear(),a=m(e)-m(t);return n*4+a}function x(e,t){return e.getUTCFullYear()-t.getUTCFullYear()}window.__framer_formatRelativeDate=D;
+}()</script>
+	<div id="main"><style data-framer-html-style="">:root body { background: var(--token-42b99213-5cbb-4a9a-9d35-426d144c5406, rgb(0, 0, 0)); }</style><div class="framer-zMmwh framer-9mxm8o" data-layout-template="true" style="min-height: 100vh; width: auto;"><header class="framer-hqzxdc" data-framer-layout-hint-center-x="true" data-framer-name="nav - holder"><div class="framer-fb4az8-container" data-framer-appear-id="fb4az8" style="opacity: 1; transform: none; will-change: transform;"><nav class="framer-mptDN framer-aBWDC framer-JG0RN framer-1jek62c framer-v-1jek62c" data-border="true" data-framer-name="Desktop" style="--border-bottom-width: 0px; --border-color: var(--token-07aaf817-d347-455f-89bc-717c87911a1b, rgba(255, 255, 255, 0.1)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; backdrop-filter: blur(22.7px); background-color: var(--token-412cf3f5-6bcc-4fb2-92b9-1f48634eb54c, rgba(0, 0, 0, 0.05)); max-width: 100%; width: 100%; border-radius: 10px; box-shadow: rgba(255, 255, 255, 0.18) 0px 4px 30px 0px inset; opacity: 1;"><div class="framer-1y7cmuv" data-framer-name="top" style="opacity: 1;"><a class="framer-h08re7 framer-17kfw02" data-framer-name="logo" href="./" style="opacity: 1;"><div class="framer-z50i8v" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><div class="framer-text framer-styles-preset-17emrzc" data-styles-preset="oxXloDcyz" dir="auto" style="--framer-text-alignment: center;">Mayclear</div><p class="framer-text framer-styles-preset-ly49yt" data-styles-preset="XOGxNtvsA" dir="auto" style="--framer-text-alignment: center;">Tap. Talk. Focus.</p></div></a></div></nav></div></header><style data-framer-html-style="">html body { background: var(--token-42b99213-5cbb-4a9a-9d35-426d144c5406, rgb(0, 0, 0)); }</style><div data-framer-root="" class="framer-jqevs framer-yhhsT framer-dYR5T framer-17cm018" style="min-height: 100vh; width: auto; display: contents;"><div class="framer-r0od6s-container"><div></div></div><div class="framer-1qffya" data-framer-name="bg"><div data-framer-background-image-wrapper="true" style="position: absolute; border-radius: inherit; corner-shape: inherit; inset: 0px;"><img decoding="async" width="5760" height="3240" sizes="100vw" srcset="https://framerusercontent.com/images/RBItp2feB3ps0n2iMCTeeKaGrBA.png?scale-down-to=512&amp;width=5760&amp;height=3240 512w, https://framerusercontent.com/images/RBItp2feB3ps0n2iMCTeeKaGrBA.png?scale-down-to=1024&amp;width=5760&amp;height=3240 1024w, https://framerusercontent.com/images/RBItp2feB3ps0n2iMCTeeKaGrBA.png?scale-down-to=2048&amp;width=5760&amp;height=3240 2048w, https://framerusercontent.com/images/RBItp2feB3ps0n2iMCTeeKaGrBA.png?scale-down-to=4096&amp;width=5760&amp;height=3240 4096w, https://framerusercontent.com/images/RBItp2feB3ps0n2iMCTeeKaGrBA.png?width=5760&amp;height=3240 5760w" src="https://framerusercontent.com/images/RBItp2feB3ps0n2iMCTeeKaGrBA.png?width=5760&amp;height=3240" alt="Ultravibe - Grainient" style="display: block; width: 100%; height: 100%; border-radius: inherit; corner-shape: inherit; object-position: center center; object-fit: cover;"></div></div><main class="framer-i8dkt4" data-framer-name="Main"><section class="framer-8fropz" data-border="true" data-framer-appear-id="8fropz" data-framer-name="Section" style="opacity: 1; transform: none; will-change: transform;"><div class="framer-1yixdsm" data-framer-name="heading"><div class="framer-11pxlqz" data-framer-component-type="RichTextContainer" style="transform: none;"><h1 class="framer-text framer-styles-preset-166u11b" data-styles-preset="sO88Y6eH1" dir="auto" style="--framer-text-color: rgb(217, 202, 202);">You're on the list!</h1></div><div class="framer-qsk7i2" data-framer-component-type="RichTextContainer" style="transform: none;"><p class="framer-text framer-styles-preset-14358om" data-styles-preset="kyufmhESz" dir="auto" style="--framer-text-color: var(--token-90b2aadb-7742-472b-8ea3-e5a41ff901d4, rgba(255, 255, 255, 0.7));">Keep an eye on your inbox for early access updates. </p><p class="framer-text framer-styles-preset-14358om" data-styles-preset="kyufmhESz" dir="auto" style="--framer-text-color: var(--token-90b2aadb-7742-472b-8ea3-e5a41ff901d4, rgba(255, 255, 255, 0.7));">Follow us on Instagram and LinkedIn for sneak peeks and launch announcements.</p></div></div><div class="framer-1mze50h-container"><div class="framer-qokBt framer-dYR5T framer-1kvv9bs framer-v-1kvv9bs" data-framer-name="Desktop" style="width: 100%; opacity: 1;"><div class="framer-ykrqy" data-framer-name="client images" style="opacity: 1;"><div class="framer-jg2osy" data-framer-name="Helper" style="opacity: 1;"><div class="framer-11wv4e5" data-framer-name="IMG" style="border-radius: 1000px; box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px; transform: translate(-50%, -50%); opacity: 1;"><div data-framer-background-image-wrapper="true" style="position: absolute; border-radius: inherit; corner-shape: inherit; inset: 0px;"><img decoding="async" width="100" height="179" src="https://framerusercontent.com/images/69t9A4F5fWukh8xZLYSeewF3A8.png?width=100&amp;height=179" alt="User" style="display: block; width: 100%; height: 100%; border-radius: inherit; corner-shape: inherit; object-position: center center; object-fit: cover;"></div></div></div><div class="framer-cy24xt" data-framer-name="Helper" style="opacity: 1;"><div class="framer-1kzs3x2" data-framer-name="IMG" style="border-radius: 1000px; box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px; transform: translate(-50%, -50%); opacity: 1;"><div data-framer-background-image-wrapper="true" style="position: absolute; border-radius: inherit; corner-shape: inherit; inset: 0px;"><img decoding="async" width="200" height="265" src="https://framerusercontent.com/images/etQCeZc9TJCsqLtUzBiFAb62O4.png?width=200&amp;height=265" alt="User" style="display: block; width: 100%; height: 100%; border-radius: inherit; corner-shape: inherit; object-position: center center; object-fit: cover;"></div></div></div><div class="framer-z1rzy3" data-framer-name="Helper" style="opacity: 1;"><div class="framer-1ri3il4" data-framer-name="IMG" style="border-radius: 1000px; box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px; transform: translate(-50%, -50%); opacity: 1;"><div data-framer-background-image-wrapper="true" style="position: absolute; border-radius: inherit; corner-shape: inherit; inset: 0px;"><img decoding="async" width="200" height="265" src="https://framerusercontent.com/images/UlvpHYSnLZ4WwCLcqMK7LJHJhAk.png?width=200&amp;height=265" alt="User" style="display: block; width: 100%; height: 100%; border-radius: inherit; corner-shape: inherit; object-position: center center; object-fit: cover;"></div></div></div></div><div class="framer-11h1ypt" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv: var(--token-90b2aadb-7742-472b-8ea3-e5a41ff901d4, rgba(255, 255, 255, 0.7)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-14358om" data-styles-preset="kyufmhESz" dir="auto" style="--framer-text-color: var(--extracted-r6o4lv, var(--token-90b2aadb-7742-472b-8ea3-e5a41ff901d4, rgba(255, 255, 255, 0.7)));">~ 200+ People already joined</p></div></div></div></section></main></div><div id="overlay"></div><div class="framer-kdxyv9"></div><div class="framer-1i6j9uw-container"><footer class="framer-qVlL3 framer-dYR5T framer-3zAcJ framer-jknuns framer-v-jknuns" data-border="true" data-framer-name="Desktop" style="--border-bottom-width: 0px; --border-color: var(--token-07aaf817-d347-455f-89bc-717c87911a1b, rgba(255, 255, 255, 0.1)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 1px; width: 100%; opacity: 1;"><div class="framer-1llifjn" data-framer-component-type="RichTextContainer" style="transform: none; opacity: 1;"><div class="framer-text framer-styles-preset-14358om" data-styles-preset="kyufmhESz" dir="auto"><a class="framer-text framer-styles-preset-rlu3xi" data-styles-preset="KbGAkdcHi" href="javascript:void(0)" style="cursor: default;">Privacy</a></div></div><div class="framer-1ygzzbz" data-framer-name="dot" style="background-color: var(--token-6c9f0706-c7df-4374-b4b0-8bf4d4d75293, rgb(255, 255, 255)); border-radius: 50px; opacity: 1;"></div><div class="framer-4kdzt9" data-framer-component-type="RichTextContainer" style="transform: none; opacity: 1;"><div class="framer-text framer-styles-preset-14358om" data-styles-preset="kyufmhESz" dir="auto"><a class="framer-text framer-styles-preset-rlu3xi" data-styles-preset="KbGAkdcHi" href="javascript:void(0)" style="cursor: default;">Terms</a></div></div><div class="framer-1uv4t72" data-framer-name="dot" style="background-color: var(--token-6c9f0706-c7df-4374-b4b0-8bf4d4d75293, rgb(255, 255, 255)); border-radius: 50px; opacity: 1;"></div><div class="framer-rci8b5" data-framer-component-type="RichTextContainer" style="transform: none; opacity: 1;"><div class="framer-text framer-styles-preset-14358om" data-styles-preset="kyufmhESz" dir="auto">Copyright - Mayclear 2026</div></div></footer></div><div class="framer-1hk5kn" data-framer-appear-id="1hk5kn" data-framer-name="links" style="opacity: 0.001; transform: translateY(30.813px); will-change: transform;"></div></div><div id="template-overlay"></div></div>
+	<script>!function(){var l="framer_variant";function u(a,r){let n=r.indexOf("#"),e=n===-1?r:r.substring(0,n),o=n===-1?"":r.substring(n),t=e.indexOf("?"),m=t===-1?e:e.substring(0,t),d=t===-1?"":e.substring(t),s=new URLSearchParams(d),h=new URLSearchParams(a);for(let[i,g]of h)s.has(i)||i!==l&&s.append(i,g);let c=s.toString();return c===""?e+o:m+"?"+c+o}var w='div#main a[href^="#"],div#main a[href^="/"],div#main a[href^="."]',f="div#main a[data-framer-preserve-params]",p=document.currentScript?.hasAttribute("data-preserve-internal-params");if(window.location.search&&!navigator.webdriver&&!/bot|-google|google-|yandex|ia_archiver|crawl|spider/iu.test(navigator.userAgent)){let a=document.querySelectorAll(p?`${w},${f}`:f);for(let r of a){let n=u(window.location.search,r.href);r.setAttribute("href",n)}}
+}()</script>
+	
+	
+	<script data-framer-appear-animation="no-preference"></script>
+	<script>typeof document<"u"&&(window.process={...window.process,env:{...window.process?.env,NODE_ENV:"production"}});</script>
+	<link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/react.BaTwLrCN.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/rolldown-runtime.DX_nRkeu.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/motion.BomXSB3F.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/framer.i7kdp2kW.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/kyufmhESz.3Meq2IPl.mjs"><script type="module" async="" data-framer-bundle="main" fetchpriority="low" src="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/script_main.B8fliENU.mjs"></script>
+	<!-- Start of bodyEnd -->
+    
+    <!-- End of bodyEnd -->
+
+
+<iframe id="__framer-editorbar" src="https://framer.com/edit?framerSiteId=fcf92acb5a5a965a67a4246c22d52a3edc344f4ef4cd1b37eb40af5199a7f008&amp;source=mayclear.framer.website&amp;features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%7D&amp;loadStart=1772438850617" aria-hidden="true" allow="autoplay" tabindex="-1" class="status_hidden"></iframe><script>
+(function() {
+    var origin = "https://mayclear.framer.website";
+    var allowed = ["https://mayclear.framer.website/", "https://mayclear.framer.website/privacy", "https://mayclear.framer.website/terms-and-conditions", "https://mayclear.framer.website/thankyou"];
+    var relativeRoot = "../";
+    
+    function neutralizeLink(a) {
+        if (!a || a.getAttribute("data-nce-checked")) return;
+        var rawHref = a.getAttribute("href");
+        if (!rawHref) return;
+        
+        a.setAttribute("data-nce-checked", "true");
+
+        // Ignore anchors, JS, mailto, tel
+        if (rawHref.indexOf("#") === 0 || rawHref.indexOf("javascript:") === 0 || rawHref.indexOf("mailto:") === 0 || rawHref.indexOf("tel:") === 0) return;
+
+        try {
+            // Crucial: Resolve against intended target domain, NOT local filesystem.
+            var url = new URL(rawHref, origin);
+            if (url.origin === origin) {
+                // Internal link
+                var clean = url.pathname.replace(/\/$/, '') || '/';
+                var full = url.origin + clean;
+                var isExported = allowed.indexOf(full) !== -1;
+                
+                if (!isExported) {
+                    // Block unexported pages
+                    a.setAttribute("href", "javascript:void(0)");
+                    a.removeAttribute("target");
+                    a.style.cursor = "default";
+                }
+                // If allowed, DO NOTHING! Let the SPA router handle the clean URL navigation natively.
+            } else {
+                // External link
+                if (a.getAttribute("target") !== "_blank") {
+                    a.setAttribute("target", "_top");
+                }
+            }
+        } catch(err) {}
+    }
+
+    // Process existing links immediately
+    document.querySelectorAll("a[href]").forEach(neutralizeLink);
+
+    // Watch for dynamically added links (e.g., React portals, dropdowns)
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            mutation.addedNodes.forEach(function(node) {
+                if (node.nodeType === 1) { // ELEMENT_NODE
+                    if (node.tagName === "A") neutralizeLink(node);
+                    if (node.querySelectorAll) {
+                        node.querySelectorAll("a[href]").forEach(neutralizeLink);
+                    }
+                }
+            });
+            if (mutation.type === "attributes" && mutation.attributeName === "href") {
+                neutralizeLink(mutation.target);
+            }
+        });
+    });
+    // Target documentElement to catch portals/overlays injected outside <body>
+    observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ["href"] });
+
+    // Fallback event blackhole for advanced SPAs targeting unexported links
+    var events = ["click", "mousedown", "mouseup", "pointerdown", "pointerup", "touchstart", "touchend"];
+    events.forEach(function(ev) {
+        document.addEventListener(ev, function(e) {
+            var a = e.target.closest("a");
+            if (!a) return;
+            var rawHref = a.getAttribute("href");
+            if (!rawHref || rawHref.indexOf("#") === 0) return;
+            
+            // Blackhole neutralized links completely across all interactions
+            if (rawHref.indexOf("javascript:void(0)") !== -1) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+                return;
+            }
+
+            // Offline file:// routing fallback
+            if (ev === "click" && window.location.protocol === "file:") {
+                try {
+                    var url = new URL(rawHref, origin);
+                    if (url.origin === origin) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        e.stopImmediatePropagation();
+                        
+                        var clean = url.pathname.replace(/\/$/, '') || '/';
+                        var full = url.origin + clean;
+                        var isExported = allowed.indexOf(full) !== -1;
+                        if (isExported) {
+                            var targetPath = clean === '/' ? 'index.html' : clean.substring(1) + '/index.html';
+                            window.location.href = relativeRoot + targetPath;
+                        }
+                        return;
+                    }
+                } catch(err) {}
+            }
+        }, true);
+    });
+})();
+</script></body></html>
