@@ -430,6 +430,22 @@
 	<link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/react.BaTwLrCN.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/rolldown-runtime.DX_nRkeu.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/motion.BomXSB3F.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/framer.i7kdp2kW.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/kyufmhESz.3Meq2IPl.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/C99jTwvBMuqjIKhQQkm4f7qdNB1KUX-CvaokXyC2lfU.CSiEgBMK.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/augiA20Il.4aUl4BjZ.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/shared-lib.vWfQAS_p.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/sO88Y6eH1.e9D-Hi6S.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/usGWrcwwo.DUcQK8DJ.mjs"><script type="module" async="" data-framer-bundle="main" fetchpriority="low" src="https://framerusercontent.com/sites/6Xn7TNfx7x13gOOEZH4stj/script_main.B8fliENU.mjs"></script><div id="svg-templates" style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict" aria-hidden="true">
 </div>
 	<!-- Start of bodyEnd -->
+    <script>
+      (function () {
+        var mainCta = document.querySelector('a[href^="https://play.google.com/store/apps/details?id=com.taskwitness.app"]');
+        if (!mainCta) return;
+
+        mainCta.addEventListener('click', function () {
+          if (typeof window.gtag !== 'function') return;
+          window.gtag('event', 'main_cta_click', {
+            event_category: 'engagement',
+            event_label: 'google_play_hero_button',
+            link_url: mainCta.href,
+            transport_type: 'beacon'
+          });
+        });
+      })();
+    </script>
     
     <!-- End of bodyEnd -->
 
