@@ -446,6 +446,47 @@
         });
       })();
     </script>
+    <script>
+      (function () {
+        function ensureBlogFooterLink() {
+          var termsLinks = document.querySelectorAll('footer a[href*="terms-and-conditions"]');
+          if (!termsLinks.length) return;
+
+          termsLinks.forEach(function (termsLink) {
+            var footer = termsLink.closest('footer');
+            if (!footer) return;
+
+            var existingBlog = footer.querySelector('a[href="https://blog.mayclear.co"]');
+            if (existingBlog) return;
+
+            var termsContainer = termsLink.closest('[data-framer-component-type="RichTextContainer"]');
+            if (!termsContainer || !termsContainer.parentElement) return;
+
+            var dot = document.createElement('div');
+            dot.className = 'framer-1uv4t72';
+            dot.setAttribute('data-framer-name', 'dot');
+            dot.style.cssText = 'background-color: var(--token-6c9f0706-c7df-4374-b4b0-8bf4d4d75293, rgb(255, 255, 255)); border-radius: 50px; opacity: 1;';
+
+            var blogItem = document.createElement('div');
+            blogItem.className = 'framer-4kdzt9';
+            blogItem.style.cssText = 'transform: none; opacity: 1;';
+            blogItem.setAttribute('data-framer-component-type', 'RichTextContainer');
+            blogItem.innerHTML = '<div class="framer-text framer-styles-preset-14358om" data-styles-preset="kyufmhESz" dir="auto"><a class="framer-text framer-styles-preset-rlu3xi" data-styles-preset="KbGAkdcHi" href="https://blog.mayclear.co" target="_blank">Blog</a></div>';
+
+            termsContainer.parentElement.insertAdjacentElement('afterend', dot);
+            dot.insertAdjacentElement('afterend', blogItem);
+          });
+        }
+
+        ensureBlogFooterLink();
+        window.addEventListener('load', ensureBlogFooterLink);
+
+        var observer = new MutationObserver(function () {
+          ensureBlogFooterLink();
+        });
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+      })();
+    </script>
     
     <!-- End of bodyEnd -->
 
